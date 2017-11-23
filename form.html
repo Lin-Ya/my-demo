@@ -3,10 +3,60 @@
 <head>
 	<meta charset="UTF-8">
 	<title>form</title>
+	<style>
+		body{
+			font-family: Arial;
+			font-size: 16px;
+		}
+		.theform{
+			width: 600px;
+			margin: 0 auto 0;
+			text-transform: capitalize;
+			
+		}
+		.theform table{
+			margin-bottom: 30px;
+		}
+		.colorful{
+			margin-top: 30px;
+			width: 100%;
+			border: solid 1px #c0c0c0;
+			border-spacing: 0;
+			border-collapse: collapse;
+		}
+		.colorful th{
+			padding: 8px;
+			text-align: left;
+			color: #FFFFFF;
+			background: #4CAF50;
+		}
+		.colorful td{
+			padding: 8px;
+			border-top: 1px solid #c0c0c0;
+		}
+		.monochrome{
+			margin-top: 30px;
+			width: 100%;
+			border-spacing: 0;
+			border-collapse: collapse;
+		}
+		.monochrome th{
+			padding: 8px;
+			text-align: left;
+			border-bottom: solid 1px #c0c0c0;
+		}
+		.monochrome td{
+			padding: 8px;
+			border-bottom: solid 1px #c0c0c0;
+		}
+		.theform tr:nth-child(even){
+			background-color: #E4E4E4;
+		}
+	</style>
 </head>
 <body>
-	<div class="colorful">
-		<table>
+	<div class="theform">
+		<table class="colorful">
 			<tr>
 				<th>first name</th>
 				<th>last name</th>
@@ -38,9 +88,7 @@
 				<td>35</td>
 			</tr>
 		</table>
-	</div>
-		<div class="monochrome">
-		<table>
+		<table class="monochrome">
 			<tr>
 				<th>first name</th>
 				<th>last name</th>
