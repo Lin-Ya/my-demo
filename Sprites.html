@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sprites</title>
+	<style>
+		.layput{
+			width: 600px;
+			margin:0 auto;
+		}
+		.icon{
+			display: inline-block;
+			width: 64px;
+			height: 32px;
+			background: transparent url(./css_sprites.png) no-repeat;
+			vertical-align: middle;
+			width: 32px;
+			height: 32px;
+		}
+		.icon.search{
+			background-position: 0px 0px;
+		}
+		.icon.car{
+			background-position: -32px 0px;
+		}
+	</style>
+</head>
+<body>
+	<div class="layput">
+		<div class="search">
+			<input class="inputbox" type="text">
+			<span class="icon search"></span>
+		</div>
+		<div class="buycar">
+			<button>加入购物车</button>
+			<span class="icon car"></span>
+		</div>
+	</div>
+</body>
+</html>
