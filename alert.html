@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>alert</title>
+    <style>
+        body{
+            width: 600px;
+            margin: 0 auto;
+            font-size: 16px;
+        }
+        .box{
+            margin-top: 35px;
+            background-color: #4CAF50;
+            border-radius: 3px;
+            padding: 1px 16px;
+            color: #ffffff;
+            line-height: 1.5;
+        }
+        .box .close{
+            font-weight: bold;
+            float: right;
+            display: block;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        /* .box:hover{
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            -moz-box-shadow:3px 5px 7px rgba(0,0,0,0.7);
+            -webkit-box-shadow:3px 5px 7px rgba(0,0,0,0.7);
+            box-shadow: 3px 5px 7px rgba(0,0,0,0.7);
+            cursor: pointer;
+        } */
+        .box h3{
+            margin: 10px 0;
+        }
+        .box.notice{
+            background-color:#2196F3; 
+        }
+        .box.god{
+            background-color: #f44336;
+        }
+        .box.warning{
+            background-color: #ff9800;
+        }
+    </style>
+</head>
+<body>
+    <div class="box succes">
+        <span class="close">x</span>
+        <h3>恭喜你</h3>
+        <p>获得本周学霸，继续加油吧</p>
+    </div>
+    <div class="box notice">
+        <span class="close">x</span>
+        <h3>通知</h3>
+        <p>晚上上课，不要忘了</p>
+    </div>
+    <div class="box god">
+        <span class="close">x</span>
+        <h3>天啊</h3>
+        <p>竟然几天没做任务</p>
+    </div>
+    <div class="box warning">
+        <span class="close">x</span>
+        <h3>警告</h3>
+        <p>学如逆水行舟，不进则退</p>
+    </div>
+</body>
+</html>
