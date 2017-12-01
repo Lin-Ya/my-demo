@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .title {
+      margin: 20px auto 0;
+      border-bottom: 1px solid rgb(123, 123, 123);
+      padding-bottom: 15px;
+      text-align: center;
+      width: 800px;
+    }
+    .title h1{
+      color: rgb(123, 123, 123);
+    }
+    .body {
+      margin: 30px auto 0;
+      width: 800px;
+    }
+    img {
+      width:260px;
+    }
+    .cell{
+      float: left;
+      box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.3);
+    }
+    .cell>p{
+      text-align: center;
+      padding: 15px;
+    }
+    .middle{
+      margin:0 10px;
+    }
+    .hang::after{
+      content:'';
+      display:block;
+      clear: both;
+    }
+    .hang{
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">
+    <h1>风景列表</h1>
+  </div>
+  <div class="body">
+      <div id="hang-1" class="hang">
+        <div class="cell">
+        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="风景如画">
+        <P class="img-name">风景如画</p>
+      </div>
+         <div class="cell middle">
+        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="风景如画">
+        <p class="img-name">风景如画</p>
+      </div>
+         <div class="cell">
+        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="风景如画">
+        <p class="img-name">风景如画</p>
+      </div>
+    </div>
+    <div id="hang-2" class="hang">
+        <div class="cell">
+        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="风景如画">
+        <P class="img-name">风景如画</p>
+      </div>
+         <div class="cell middle">
+        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="风景如画">
+        <p class="img-name">风景如画</p>
+      </div>
+         <div class="cell">
+        <img src="http://7xpvnv.com2.z0.glb.qiniucdn.com/283a4100-10cd-4208-a3b5-4030ec03acf6" alt="风景如画">
+        <p class="img-name">风景如画</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
