@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ToggleStyle-Demo</title>
+	<style type="text/css">
+		.box {
+			padding: 10px;
+			border: 2px solid #ccc;
+			box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, .2)
+		}
+
+		.box.active {
+			background-color: black;
+			color: #fff
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h2>hello</h2>
+		<p>world</p>
+	</div>
+	<button class="add">add</button>
+  	<button class="remove">remove</button>
+  	<button class="toggle1">toggle1</button>
+  	<button class="toggle2">toggle2</button>
+  	<script type="text/javascript">
+		var boxPanel = document.querySelector('.box');
+		var addBut = document.querySelector('.add');
+		var removeBut = document.querySelector('.remove');
+		var toggleBut1 = document.querySelector('.toggle1');
+		var toggleBut2 = document.querySelector('.toggle2');
+		addBut.onclick = function(){
+			boxPanel.classList.add('active');
+		};
+		removeBut.onclick = function(){
+			boxPanel.classList.remove('active');
+		};
+		toggleBut1.onclick = function(){
+			if(boxPanel.classList.contains('active')){
+				boxPanel.classList.remove('active');
+			}else {
+				boxPanel.classList.add('active');
+			}
+		};
+		toggleBut2.onclick = function(){
+			boxPanel.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>
