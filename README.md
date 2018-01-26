@@ -1,3 +1,3 @@
 # my-demo
-my first dem
-hello
+a few demo of practice
+Preview address：https://lin-ya.github.io/my-demo/
